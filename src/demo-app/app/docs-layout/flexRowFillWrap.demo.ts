@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'demo-flex-row-fill-wrap',
@@ -11,13 +11,16 @@ import {Component, ViewEncapsulation} from '@angular/core';
       <md-card-subtitle>Using "layout-wrap" to wrap positioned items within a layout container</md-card-subtitle>
       <md-card-content>
         <div class="containerX">
-          <div [fxLayout]="direction" fxLayoutWrap class="colored wrapped box" (click)="toggleDirection()" style="cursor: pointer;">
+          <div [fxLayout]="direction" fxLayoutWrap class="colored box" (click)="toggleDirection()" style="cursor: pointer;">
             
               <div fxFlex="30"> fxFlex="30" </div>
               <div fxFlex="45"> fxFlex="45" </div>
               <div fxFlex="19"> fxFlex="19" </div>
               <div fxFlex="33"> fxFlex="33" </div>
               <div fxFlex="67"> fxFlex="67" </div>
+              <div fxFlex="33.33"> fxFlex="33.33" </div>
+              <div fxFlex="33.33"> fxFlex="33.33" </div>
+              <div fxFlex="33.33"> fxFlex="33.33" </div>
               <div fxFlex="50"> fxFlex="50" </div>
               <div fxFlex>      fxFlex      </div>
               
